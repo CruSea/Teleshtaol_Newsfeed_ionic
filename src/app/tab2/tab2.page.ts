@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -6,7 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
-  constructor() {}
+  cards: any;
+  category = 'gear';
+  constructor(public navCtrl: NavController) {
+    this.cards = new Array(10);
+  }
 
 }
