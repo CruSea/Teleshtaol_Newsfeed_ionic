@@ -1,9 +1,45 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      home 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card color="secondary" *ngFor="let item of [].constructor(50)">
+    <ion-card-header>
+    </ion-card-header>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="https://avatars.io/facebook/joshua.morony" />
+      </ion-avatar>
+      <h2>Josh Morony</h2>
+      <p>November 5, 1955</p>
+    </ion-item>
+
+    <img src="http://placehold.it/500x200" />
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste dolore beatae consequuntur, quidem molestiae. Nesciunt, sed inventore. Modi facere provident commodi dolorem deleniti ad ratione, a voluptatibus vero eveniet.
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <ion-note>12</ion-note>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <ion-note>4</ion-note>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
